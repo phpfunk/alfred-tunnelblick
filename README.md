@@ -24,7 +24,7 @@ Examples
 
 Download
 ----------------
-[Spotify Controls](https://github.com/phpfunk/alfred-tunnelblick/downloads)
+[Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/downloads)
     
 
 ## Version History ##
