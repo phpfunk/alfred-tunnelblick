@@ -1,7 +1,7 @@
 Tunnelblick Toggle for Alfred
 ============
 
-An AppleScript so you can control Spotify from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
+An AppleScript so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
 
 Installation
 ----------------
