@@ -1,36 +1,34 @@
-Tunnelblick Toggle for Alfred
-============
+# Tunnelblick for Alfred
+An Alfred Workflow so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
 
-An AppleScript so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
+## Installation
+To install the Tunnelblick Workflow in Alfred double click on `Tunnelblick.alfredworkflow`.
 
-Installation
-----------------
-
-To install Tunnelblick Toggle in Alfred double click on the extension file.
-
-How to use
-----------------
-
+## How to use
 Once installed with Alfred you can run the following commands
 
-
-    vpn config_name    ::  Will connect/disconnect from the configuration file passed
-      
-
-Examples
-----------------
-    $ vpn work
+```
+vpn    :: Will display all your tunnelblick configurations, then just click one or press enter on it to connect/disconnect
 
 
-Download
-----------------
-[Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/downloads)
-    
+## Examples
+```
+vpn
+```
 
-## Version History ##
-### 1.0.0 - December 22, 2011 ###
+## Download
+[Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/archive/v2.zip)
 
-- Initial release
-- Ability to toggle connections
-- Growl notifications
-- Support for invalid configs
+## Version History
+
+### 2.0.0 - January 14, 2013
+
+* Updated for Alfred version 2
+* Simplified, more unified workings
+
+### 1.0.0 - December 22, 2011
+
+* Initial release
+* Ability to toggle connections
+* Growl notifications
+* Support for invalid configs
