@@ -7,6 +7,8 @@ To install the Tunnelblick Workflow in Alfred double click on `Tunnelblick.alfre
 ## How to use
 Once installed with Alfred you can run the following command `vpn`. Once you type `vpn` all your tunnelblick configs will appear in the dropdown list in Alfred. Simply click one or press Enter to toggle the connection for that VPN. Now you don't have to remember the names of your VPN configs ;).
 
+<img src="http://cl.ly/image/010j0P2f382n/tunnelblick-alfred.png" title="Tunnelblick in Alfred" />
+
 ## Examples
 ```
 vpn
