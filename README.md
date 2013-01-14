@@ -9,7 +9,7 @@ Once installed with Alfred you can run the following commands
 
 ```
 vpn    :: Will display all your tunnelblick configurations, then just click one or press enter on it to connect/disconnect
-
+```
 
 ## Examples
 ```
