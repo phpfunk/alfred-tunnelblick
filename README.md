@@ -3,6 +3,9 @@ Tunnelblick Toggle for Alfred
 
 An AppleScript so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
 
+## [Version 2 of this extension is ready for Alfred 2](https://github.com/phpfunk/alfred-tunnelblick/tree/v2)
+[Click here to download the new workflow.](https://github.com/phpfunk/alfred-tunnelblick/tree/v2)
+
 Installation
 ----------------
 
@@ -15,7 +18,7 @@ Once installed with Alfred you can run the following commands
 
 
     vpn config_name    ::  Will connect/disconnect from the configuration file passed
-      
+
 
 Examples
 ----------------
@@ -25,7 +28,7 @@ Examples
 Download
 ----------------
 [Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/downloads)
-    
+
 
 ## Version History ##
 ### 1.0.0 - December 22, 2011 ###
