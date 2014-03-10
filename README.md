@@ -1,39 +1,35 @@
-Tunnelblick Toggle for Alfred
-============
+# Tunnelblick for Alfred
+An Alfred Workflow so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
 
-An AppleScript so you can control Tunnelblick from [Alfred App](http://alfredapp.com/). You will need Alfred and the [Powerpack](http://www.alfredapp.com/powerpack/) to use this.
+## Installation
+To install the Tunnelblick Workflow in Alfred double click on `Tunnelblick.alfredworkflow`.
 
-## [Version 2 of this extension is ready for Alfred 2](https://github.com/phpfunk/alfred-tunnelblick/tree/v2)
-[Click here to download the new workflow.](https://github.com/phpfunk/alfred-tunnelblick/tree/v2)
+## How to use
+Once installed with Alfred you can run the following command `vpn`. Once you type `vpn` all your tunnelblick configs will appear in the dropdown list in Alfred. Simply click one or press Enter to toggle the connection for that VPN. Now you don't have to remember the names of your VPN configs ;).
 
-Installation
-----------------
+<img src="http://cl.ly/image/010j0P2f382n/tunnelblick-alfred.png" title="Tunnelblick in Alfred" />
 
-To install Tunnelblick Toggle in Alfred double click on the extension file.
+## Examples
+```
+vpn
+```
 
-How to use
-----------------
+## Download
+[Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/archive/master.zip)
 
-Once installed with Alfred you can run the following commands
+## Version History
 
+### 2.0.1 - January 21, 2013
+* Update bundle ID
 
-    vpn config_name    ::  Will connect/disconnect from the configuration file passed
+### 2.0.0 - January 14, 2013
 
+* Updated for Alfred version 2
+* Simplified, more unified workings
 
-Examples
-----------------
-    $ vpn work
+### 1.0.0 - December 22, 2011
 
-
-Download
-----------------
-[Tunnelblick](https://github.com/phpfunk/alfred-tunnelblick/downloads)
-
-
-## Version History ##
-### 1.0.0 - December 22, 2011 ###
-
-- Initial release
-- Ability to toggle connections
-- Growl notifications
-- Support for invalid configs
+* Initial release
+* Ability to toggle connections
+* Growl notifications
+* Support for invalid configs

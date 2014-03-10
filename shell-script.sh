@@ -1,0 +1,1 @@
+osascript tunnelblick-lookup.scpt
