@@ -1,14 +1,26 @@
-tell application "Tunnelblick"
-    set configs to get name of configurations
-    set xml to "<items>"
-    repeat with c in configs
-        set xml to xml & "<item uid=\"" & c & "\" arg=\"" & c & "\">"
-        set xml to xml & "<title>" & c & "</title>"
-        set xml to xml & "<subtitle>Connect/Disconnect to " & c & "</subtitle>"
-        set xml to xml & "<icon>icon.png</icon>"
-        set xml to xml & "<autocomplete>" & c & "</autocomplete>"
-        set xml to xml & "</item>"
-    end repeat
-    set xml to xml & "</items>"
-    return xml
-end tell
+on vpn_configurations(q)
+	tell application "Tunnelblick"
+		set configs to get name of configurations
+		set xml to "<items>"
+		repeat with c in configs
+			if c contains q or q is equal to "" then
+				set xml to xml & "<item uid=\"" & c & "\" arg=\"" & c & "\">"
+				set xml to xml & "<title>" & c & "</title>"
+				set xml to xml & "<subtitle>Connect/Disconnect to " & c & "</subtitle>"
+				set xml to xml & "<icon>icon.png</icon>"
+				set xml to xml & "<autocomplete>" & c & "</autocomplete>"
+				set xml to xml & "</item>"
+			end if
+		end repeat
+		set xml to xml & "</items>"
+		return xml
+	end tell
+end vpn_configurations
+
+on run (argv)
+	set q to ""
+	if (count argv) > 0 then
+		set q to item 1 of argv
+	end if
+	return vpn_configurations(q)
+end run
