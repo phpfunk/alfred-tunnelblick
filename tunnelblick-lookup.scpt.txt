@@ -4,10 +4,16 @@ on vpn_configurations(q)
 		set xml to "<items>"
 		repeat with c in configs
 			if c contains q or q is equal to "" then
+				set s to get (state of first configuration where name = c)
 				set xml to xml & "<item uid=\"" & c & "\" arg=\"" & c & "\">"
 				set xml to xml & "<title>" & c & "</title>"
-				set xml to xml & "<subtitle>Connect/Disconnect to " & c & "</subtitle>"
-				set xml to xml & "<icon>icon.png</icon>"
+				if s is equal to "CONNECTED" then
+					set xml to xml & "<subtitle>Disconnect from " & c & "</subtitle>"
+					set xml to xml & "<icon>icon-disconnect.png</icon>"
+				else
+					set xml to xml & "<subtitle>Connect to " & c & "</subtitle>"
+					set xml to xml & "<icon>icon.png</icon>"
+				end if
 				set xml to xml & "<autocomplete>" & c & "</autocomplete>"
 				set xml to xml & "</item>"
 			end if
